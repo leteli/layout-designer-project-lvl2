@@ -1,0 +1,29 @@
+{
+  "name": "layout-designer-project-lvl2",
+  "version": "1.0.0",
+  "description": "My second project in layout design",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leteli/layout-designer-project-lvl2.git"
+  },
+  "author": "Nastia Kartseva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leteli/layout-designer-project-lvl2/issues"
+  },
+  "homepage": "https://github.com/leteli/layout-designer-project-lvl2#readme",
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^14.9.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard-scss": "^4.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0",
+    "surge": "^0.23.1"
+  }
+}
