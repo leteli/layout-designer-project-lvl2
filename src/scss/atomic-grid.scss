@@ -1,0 +1,44 @@
+.p-abs {
+  position: absolute;
+}
+  
+.p-rel {
+  position: relative;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: $text-headers;
+}
+
+.btn-green {
+  background-color: #34c176;
+}
