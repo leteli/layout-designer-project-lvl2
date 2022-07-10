@@ -1,0 +1,252 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #cacaca;
+  background-color: #08020d;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section,
+header,
+footer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.h1 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.h2 {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (min-width: 1240px) {
+  section,
+header,
+footer {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .h1 {
+    font-size: 60px;
+    line-height: 90px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .h2 {
+    font-size: 38px;
+    line-height: 57px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+.p-abs {
+  position: absolute;
+}
+
+.p-rel {
+  position: relative;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.btn-green {
+  background-color: #34c176;
+}
+
+.header {
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 17px;
+  top: 25px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.header .logo {
+  margin-right: 1rem;
+}
+
+.header-nav {
+  flex-direction: column;
+}
+
+.header-search {
+  margin: 0;
+  width: 100%;
+}
+.header-search input {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: #3c3b3d;
+}
+.header-search ::placeholder {
+  color: #757575;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.p-banner {
+  padding-top: 250px;
+  padding-bottom: 200px;
+}
+
+.flex-col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner-form {
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+}
+.banner-form .input-group {
+  flex-wrap: wrap;
+}
+.banner-form input {
+  flex-grow: 1;
+  min-width: 270px;
+  min-height: 50px;
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+  border: solid 2px #cacaca;
+  border-radius: 3px;
+}
+.banner-form .input-bg {
+  background-color: rgba(0, 0, 0, 0);
+}
+.banner-form ::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+.banner-form button {
+  display: block;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.banner-image {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 1240px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    gap: 90px;
+  }
+  .header .header-nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+  }
+  .p-banner {
+    padding-top: 200px;
+  }
+  .header-search {
+    margin-left: auto;
+    max-width: 250px;
+  }
+  .header-search input {
+    max-width: 250px;
+  }
+  .banner-form .input-group {
+    gap: 25px;
+  }
+}
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.footer-menu li {
+  list-style: none;
+}
+.footer-menu .footer-title {
+  text-transform: uppercase;
+}
+.footer-menu .footer-title :nth-child(n) {
+  text-transform: none;
+}
+
+@media (min-width: 1240px) {
+  .footer-menu {
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+  }
+}
+.bg-footer {
+  background-image: linear-gradient(265deg, #95390C 15%, #5328A1 69%);
+}
+
+/*# sourceMappingURL=styles.css.map */
