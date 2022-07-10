@@ -1,0 +1,62 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $text-main;
+  background-color: $bg-main;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section,
+header,
+footer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin headers($font-size: 18px, $line-height: 1.5) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $text-headers;
+}
+
+.h1 {
+  @include headers(30px, 45px);
+}
+
+.h2 {
+  @include headers;
+}
+
+@media (min-width: 1240px) {
+  section,
+  header,
+  footer {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .h1 {
+    @include headers(60px, 90px);
+  }
+
+  .h2 {
+    @include headers(38px, 57px);
+  }
+}
