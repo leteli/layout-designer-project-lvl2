@@ -4,13 +4,19 @@
   src: url("../fonts/Roboto-Regular.ttf");
 }
 
+@font-face {
+  font-weight: 700;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
 * {
   box-sizing: border-box;
 }
 
 html, body {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   color: $text-main;
   background-color: $bg-main;
@@ -59,4 +65,10 @@ footer {
   .h2 {
     @include headers(38px, 57px);
   }
+}
+
+.btn {
+  display: block;
+  padding: 20px 30px;
+  border-radius: 5px;
 }
