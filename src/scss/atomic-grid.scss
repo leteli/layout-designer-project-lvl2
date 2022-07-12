@@ -26,6 +26,10 @@
   margin-top: 0;
 }
 
+.p-0 {
+  padding: 0;
+}
+
 .footer-grid {
   display: grid;
   grid-template-columns: 4;
@@ -37,6 +41,10 @@
 
 .text-white {
   color: $text-headers;
+}
+
+.transparent {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .btn-green {
