@@ -1,0 +1,116 @@
+.header {
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 17px;
+  top: 25px;
+  
+  font-size: 11px;
+  text-transform: uppercase;
+
+  .logo {
+    margin-right: 1rem;
+  }
+}
+
+.header-nav {
+  flex-direction: column;
+}
+
+@mixin arial-text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase; 
+}
+
+.header-search {
+  margin: 0;
+  width: 100%;
+  input {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50px;
+  
+    background-color: $bg-gray;
+  }
+
+  ::placeholder {
+    color: $text-light-gray;
+    @include arial-text;
+  }
+}
+
+.p-banner {
+  padding-top: 250px;
+  padding-bottom: 200px;
+}
+
+.banner-form {
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+
+  .input-group {
+    flex-wrap: wrap;
+  }
+  
+  input {
+    flex-grow: 1;
+    min-width: 270px;
+    min-height: 50px;
+    padding-left: 20px;
+    margin-bottom: 1.5rem;
+    border: solid 2px $text-main;
+    border-radius: 3px;
+  }
+
+  ::placeholder {
+    font-size: 14px;
+    font-weight: bold;
+    color: $text-headers;
+  }
+  
+  .btn {
+    border: none;
+  }
+
+  button {
+    @include arial-text;
+  }
+}
+
+.banner-image {
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+}
+
+
+@media (min-width: 1240px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    gap: 90px;
+    .header-nav {
+      flex-direction: row;
+      align-items: center;
+      gap: 25px;
+    }
+  }
+  .p-banner {
+    padding-top: 200px;
+  }
+  .header-search {
+    margin-left: auto;
+    max-width: 250px;
+    input {
+      max-width: 250px;
+    }
+  }
+  .banner-form {
+    .input-group {
+      gap: 25px;
+    }
+  }
+}
