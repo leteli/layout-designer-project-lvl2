@@ -47,6 +47,16 @@
     display: inline-block;
     padding: 16px 30px;
     border: 1px solid $text-main;
-    font-size: 12px;
+    font-size: 12.8px;
   }
+}
+
+.app-btn {
+  padding: 16px 40px;
+  border: none;
+  border-radius: 32px;
+
+  font-size: 12.8px;
+  text-transform: none;
+  background-color: $bg-brown-red;
 }
