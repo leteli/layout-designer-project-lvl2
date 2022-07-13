@@ -14,6 +14,18 @@
   box-sizing: border-box;
 }
 
+@mixin flex-center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin padding-horizontal($pl: 20px, $pr: 20px) {
+  padding-left: $pl;
+  padding-right: $pr;
+}
+
 html, body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -27,11 +39,18 @@ a {
   color: inherit;
 }
 
-section,
-header,
-footer {
-  padding-left: 20px;
-  padding-right: 20px;
+
+.section-container {
+  @include flex-center-col;
+  @include padding-horizontal;
+}
+
+.header {
+  @include padding-horizontal;
+}
+
+.content {
+  @include flex-center-col;
 }
 
 @mixin headers($font-size: 18px, $line-height: 1.5) {
@@ -50,10 +69,19 @@ footer {
   @include headers;
 }
 
+.p-top-section {
+  padding-top: 100px;
+
+  .h2 {
+    margin: 0 auto 50px;
+  }
+}
+
 @media (min-width: 1240px) {
-  section,
-  header,
-  footer {
+  .content {
+    max-width: 1200px;
+  }
+  .header {
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -71,4 +99,6 @@ footer {
   display: block;
   padding: 20px 30px;
   border-radius: 5px;
+
+  text-transform: uppercase;
 }
