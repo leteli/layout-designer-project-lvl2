@@ -73,8 +73,7 @@ a {
   .content {
     max-width: 1200px;
   }
-  .section-container,
-.header {
+  .header {
     padding-left: 120px;
     padding-right: 120px;
   }
