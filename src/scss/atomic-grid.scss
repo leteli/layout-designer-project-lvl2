@@ -26,6 +26,10 @@
   margin-top: 0;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .mb-100 {
   margin-bottom: 100px;
 }
@@ -106,5 +110,13 @@
 }
 
 .btn-green {
-  background-color: #34c176;
+  background-color: $bg-green;
+}
+
+.btn-brown {
+  background-color: $bg-brown-red;
+}
+
+.btn-purple {
+  background-color: $bg-purple;
 }
