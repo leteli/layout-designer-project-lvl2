@@ -48,7 +48,7 @@ a {
   @include padding-horizontal;
 }
 
-.content {
+.content-center {
   @include flex-center;
   flex-direction: column;
 }
@@ -99,7 +99,9 @@ a {
 .btn {
   display: block;
   padding: 20px 30px;
+  border: none;
   border-radius: 5px;
-
+  
+  color: $text-headers;
   text-transform: uppercase;
 }
