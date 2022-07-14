@@ -27,7 +27,6 @@ a {
 
 .section-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-left: 20px;
@@ -41,9 +40,9 @@ a {
 
 .content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .h1 {
@@ -70,7 +69,8 @@ a {
 }
 
 @media (min-width: 1240px) {
-  .content {
+  .footer,
+.content {
     max-width: 1200px;
   }
   .header {
@@ -161,6 +161,12 @@ a {
   grid-area: footer;
 }
 
+.footer-menu {
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  row-gap: 30px;
+}
+
 @media (min-width: 1240px) {
   .news-item {
     grid-template-columns: 1fr 1fr;
@@ -179,13 +185,11 @@ a {
     grid-template-columns: 50% auto;
     column-gap: 145px;
   }
+  .footer-menu {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+  }
 }
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -424,62 +428,62 @@ a {
 }
 
 .footer {
-  padding-top: 65px;
+  width: 100%;
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+.footer li, .footer a {
+  color: #E0E0E0;
+  list-style: none;
 }
 
 .footer-menu {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-.footer-menu li {
-  list-style: none;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 .footer-menu .footer-title {
-  margin-bottom: 1rem;
-  font-weight: 700;
+  margin-top: 0;
   font-size: 18px;
   text-transform: uppercase;
   color: #fff;
 }
-.footer-menu .footer-title li {
-  margin-right: 0;
-  font-weight: normal;
-  font-size: 16px;
-  color: #E0E0E0;
-  text-transform: none;
-}
 
 hr {
-  left: -20;
-  right: -20;
-  top: 0;
-  width: 100%;
+  left: 0;
+  width: 100vw;
   border-top: 1px solid #cacaca;
 }
 
+.footer-icons {
+  display: flex;
+  gap: 1.5em;
+}
+
 .bottom-menu {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.bottom-menu-list {
+  display: flex;
   flex-direction: column;
+  justify-content: start;
   gap: 1rem;
-  padding-top: 40px;
-  padding-bottom: 50px;
-  color: #E0E0E0;
 }
 
 @media (min-width: 1240px) {
-  .footer-menu {
-    display: grid;
-    grid-template-columns: max-content max-content max-content max-content;
-  }
-  .bottom-menu {
-    flex-direction: row;
-  }
-  .bottom-menu hr {
+  hr {
+    left: 0;
     border-top: 2px solid #E0E0E0;
   }
+  .bottom-menu-list {
+    flex-direction: row;
+  }
 }
-.bg-footer {
-  background-image: linear-gradient(265deg, #95390C 15%, #5328A1 69%);
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 
 /*# sourceMappingURL=styles.css.map */
