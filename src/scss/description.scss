@@ -1,7 +1,7 @@
 .header {
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 17px;
+  gap: 1rem;
   top: 25px;
   
   font-size: 11px;
@@ -41,9 +41,16 @@
   }
 }
 
-.p-banner {
-  padding-top: 250px;
+.description {
+  padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .banner-form {
@@ -70,22 +77,48 @@
     font-weight: bold;
     color: $text-headers;
   }
-  
-  .btn {
-    border: none;
-  }
 
-  button {
+  .btn {
     @include arial-text;
   }
 }
 
-.banner-image {
-  background-image: url('../images/banner.png');
+.artist-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 1.5rem;
+
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 200px;
+    padding: 20px 30px;
+    font-size: 12.8px;
+  }
+  
+  img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+  };
+}
+
+@mixin bg-image ($url) {
+  background-image: url($url);
   background-position: center;
   background-size: cover;
 }
 
+.banner-bg {
+ @include bg-image('../images/banner.png');
+}
+
+.artist-bg {
+  @include bg-image('../images/Morten Harket.png');
+
+}
 
 @media (min-width: 1240px) {
   .header {
