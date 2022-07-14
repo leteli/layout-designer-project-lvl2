@@ -14,9 +14,8 @@
   box-sizing: border-box;
 }
 
-@mixin flex-center-col {
+@mixin flex-center {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -41,7 +40,7 @@ a {
 
 
 .section-container {
-  @include flex-center-col;
+  @include flex-center;
   @include padding-horizontal;
 }
 
@@ -50,7 +49,8 @@ a {
 }
 
 .content {
-  @include flex-center-col;
+  @include flex-center;
+  flex-direction: column;
 }
 
 @mixin headers($font-size: 18px, $line-height: 1.5) {
@@ -78,6 +78,7 @@ a {
 }
 
 @media (min-width: 1240px) {
+  .footer,
   .content {
     max-width: 1200px;
   }
