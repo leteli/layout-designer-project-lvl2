@@ -1,0 +1,26 @@
+.popular-track {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  img {
+    width: 55px;
+    height: 55px;
+  }
+
+  font-size: 12.8px;
+}
+
+.track-info {
+  h3 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+  } 
+}
+
+.track-time {
+  margin-left: auto;
+}
