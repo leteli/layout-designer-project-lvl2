@@ -38,7 +38,7 @@ a {
   padding-right: 20px;
 }
 
-.content {
+.content-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +95,9 @@ a {
 .btn {
   display: block;
   padding: 20px 30px;
+  border: none;
   border-radius: 5px;
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -125,6 +127,10 @@ a {
 
 .mt-0 {
   margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 
 .mb-100 {
@@ -206,10 +212,18 @@ a {
   background-color: #34c176;
 }
 
+.btn-brown {
+  background-color: #95390C;
+}
+
+.btn-purple {
+  background-color: #5328A1;
+}
+
 .header {
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 17px;
+  gap: 1rem;
   top: 25px;
   font-size: 11px;
   text-transform: uppercase;
@@ -241,9 +255,16 @@ a {
   text-transform: uppercase;
 }
 
-.p-banner {
-  padding-top: 250px;
+.description {
+  padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .banner-form {
@@ -269,17 +290,40 @@ a {
   color: #fff;
 }
 .banner-form .btn {
-  border: none;
-}
-.banner-form button {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
 }
 
-.banner-image {
+.artist-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+.artist-btn-group .btn {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 200px;
+  padding: 20px 30px;
+  font-size: 12.8px;
+}
+.artist-btn-group img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+
+.banner-bg {
   background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.artist-bg {
+  background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
 }
@@ -416,25 +460,21 @@ a {
   padding: 16px 30px;
   border: 1px solid #cacaca;
   font-size: 12.8px;
+  color: #cacaca;
 }
 
 .app-btn {
   padding: 16px 40px;
-  border: none;
   border-radius: 32px;
   font-size: 12.8px;
   text-transform: none;
-  background-color: #95390C;
 }
 
-.footer {
-  width: 100%;
-}
-.footer ul {
+footer ul {
   margin: 0;
   padding: 0;
 }
-.footer li, .footer a {
+footer li, footer a {
   color: #E0E0E0;
   list-style: none;
 }
