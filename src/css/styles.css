@@ -33,15 +33,6 @@ a {
   padding-right: 20px;
 }
 
-.section-left-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .header {
   padding-left: 20px;
   padding-right: 20px;
@@ -136,10 +127,6 @@ a {
 
 .w-100 {
   width: 100%;
-}
-
-.max-w-100 {
-  max-width: 100%;
 }
 
 .m-0 {
