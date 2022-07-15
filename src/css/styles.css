@@ -33,6 +33,15 @@ a {
   padding-right: 20px;
 }
 
+.section-left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .header {
   padding-left: 20px;
   padding-right: 20px;
@@ -43,6 +52,13 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .h1 {
@@ -122,6 +138,10 @@ a {
   width: 100%;
 }
 
+.max-w-100 {
+  max-width: 100%;
+}
+
 .m-0 {
   margin: 0;
 }
@@ -136,6 +156,10 @@ a {
 
 .mb-100 {
   margin-bottom: 100px;
+}
+
+.pr-50 {
+  padding-right: 50px;
 }
 
 .p-0 {
@@ -174,16 +198,29 @@ a {
   row-gap: 30px;
 }
 
-.tracks-container {
+.artists-container, .discography-container, .tracks-container {
   display: grid;
+  gap: 25px 50px;
+}
+
+.tracks-container {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
-  gap: 25px 50px;
+}
+
+.discography-container {
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.artists-container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 @media (min-width: 1240px) {
   .news-item {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .news-item.photo-left {
     grid-template-areas: "image body" "image footer";
@@ -206,6 +243,11 @@ a {
   .tracks-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
+  }
+  .discography-container,
+.artists-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 .text-center {
@@ -270,13 +312,6 @@ a {
 .description {
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-.content-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .banner-form {
@@ -559,6 +594,22 @@ hr {
 
 .track-time {
   margin-left: auto;
+}
+
+.discography-item h4 {
+  font-size: 18px;
+  color: #fff;
+}
+.discography-item img {
+  width: 138px;
+  height: 138px;
+}
+
+@media (min-width: 1240px) {
+  .discography-item img {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
