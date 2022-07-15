@@ -38,7 +38,6 @@ a {
   color: inherit;
 }
 
-
 .section-container {
   @include flex-center;
   @include padding-horizontal;
@@ -51,6 +50,13 @@ a {
 .content-center {
   @include flex-center;
   flex-direction: column;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 @mixin headers($font-size: 18px, $line-height: 1.5) {
