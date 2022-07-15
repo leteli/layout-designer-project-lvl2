@@ -34,6 +34,10 @@
   margin-bottom: 100px;
 }
 
+.pr-50 {
+  padding-right: 50px;
+}
+
 .p-0 {
   padding: 0;
 }
@@ -70,16 +74,32 @@
   row-gap: 30px;
 }
 
-.tracks-container {
+%grid-gap-25-50 {
   display: grid;
+  gap: 25px 50px;
+}
+
+.tracks-container {
+  @extend %grid-gap-25-50;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
-  gap: 25px 50px;
+}
+
+.discography-container {
+  @extend %grid-gap-25-50;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.artists-container {
+  @extend %grid-gap-25-50;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 @media (min-width: 1240px) {
   .news-item {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     
     &.photo-left {
       grid-template-areas: "image body" "image footer";
@@ -106,6 +126,12 @@
   .tracks-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
+  }
+
+  .discography-container,
+  .artists-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 
