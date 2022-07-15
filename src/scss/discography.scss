@@ -1,0 +1,19 @@
+.discography-item {
+  h4 {
+    font-size: 18px;
+    color: $text-headers;
+  }
+  img {
+    width: 138px;
+    height: 138px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .discography-item {
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
