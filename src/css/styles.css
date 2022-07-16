@@ -109,6 +109,12 @@ a {
   text-transform: uppercase;
 }
 
+.tracks-container p,
+.discography-container p,
+.artists-container p {
+  color: #E0E0E0;
+}
+
 .p-abs {
   position: absolute;
 }
@@ -583,17 +589,32 @@ hr {
   margin-left: auto;
 }
 
-.discography-item h4 {
+.discography-item h3,
+.similar-item h3 {
+  margin: 0;
   font-size: 18px;
   color: #fff;
 }
-.discography-item img {
+.discography-item img,
+.similar-item img {
   width: 138px;
   height: 138px;
 }
+.discography-item p,
+.similar-item p {
+  margin: 0;
+}
+
+.similar-item {
+  text-align: center;
+}
+.similar-item img {
+  border-radius: 50%;
+}
 
 @media (min-width: 1240px) {
-  .discography-item img {
+  .discography-item img,
+.similar-item img {
     width: 250px;
     height: 250px;
   }
