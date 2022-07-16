@@ -1,0 +1,35 @@
+.discography-item,
+.similar-item {
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    color: $text-headers;
+  }
+
+  img {
+    width: 138px;
+    height: 138px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.similar-item {
+  text-align: center;
+  
+  img {
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 1240px) {
+  .discography-item,
+  .similar-item {
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
