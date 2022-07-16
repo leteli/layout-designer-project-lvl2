@@ -112,3 +112,11 @@ a {
   color: $text-headers;
   text-transform: uppercase;
 }
+
+.tracks-container,
+.discography-container,
+.artists-container {
+  p {
+    color: $text-light;
+  }
+}
