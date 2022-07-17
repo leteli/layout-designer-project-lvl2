@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="m-0">
-  <section class="section banner-bg">
-    <div id="page-description" class="p-rel content description text-center">
+  <section id="page-description" class="section banner-bg">
+    <div class="p-rel content description text-center">
     <header class="p-abs d-flex w-100 header">
       <div class="d-flex align-center">
         <img class="logo" src="./images/logo.svg" alt="Music Box Logo">
@@ -40,13 +40,13 @@
       </div>
     </div>
   </section>
-  <section class="section text-center text-white">
-    <div id="page-pricing" class="content content-top">
+  <section class="section text-white">
+    <div id="page-pricing" class="content content-top text-center">
       <h2 class="h2">Формы подписки</h2>
       <div class="d-flex pricing-container">
         <div class="pricing-item bg-item bg-free">
           <h3 class="h3">Бесплатная</h3>
-          <p class="d-flex pricing-value mt-0">0<span class="currency">руб.</span></p>
+          <div class="price-flex"><span class="pricing-value">0</span><span class="currency">руб.</span></div>
           <a class="btn" href="#">Оформить</a>
           <p class="pricing-footer">
             Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама
@@ -54,13 +54,13 @@
         </div>
           <div class="pricing-item bg-item bg-standard">
             <h3 class="h3">Стандартная</h3>
-            <p class="d-flex pricing-value mt-0">250<span class="currency">руб.</span></p>
+            <div class="price-flex"><span class="pricing-value">250</span><span class="currency">руб.</span></div>
             <a class="btn" href="#">Оформить</a>
             <p class="pricing-footer">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
           </div>
           <div class="pricing-item bg-item bg-premium">
             <h3 class="h3">Премиум</h3>
-            <p class="d-flex pricing-value mt-0">500<span class="currency">руб.</span></p>
+            <div class="price-flex"><span class="pricing-value">500</span><span class="currency">руб.</span></div>
             <a class="btn" href="#">Оформить</a>
             <p class="pricing-footer">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
           </div>
