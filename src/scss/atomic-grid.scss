@@ -119,6 +119,7 @@
   }
 
   .footer-menu {
+    grid-template-rows: auto;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
   }
