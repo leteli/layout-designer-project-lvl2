@@ -25,29 +25,15 @@ a {
   color: inherit;
 }
 
-.section-container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.section-center-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.content-center {
+.section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+}
+
+.content {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
 }
 
 .content-left {
@@ -73,10 +59,10 @@ a {
   color: #fff;
 }
 
-.p-top-section {
+.content-top {
   padding-top: 100px;
 }
-.p-top-section .h2 {
+.content-top .h2 {
   margin-top: 0;
   margin-bottom: 3rem;
 }
@@ -85,10 +71,6 @@ a {
   .footer,
 .content {
     max-width: 1200px;
-  }
-  .header {
-    padding-left: 120px;
-    padding-right: 120px;
   }
   .h1 {
     font-size: 60px;
@@ -235,6 +217,7 @@ a {
     column-gap: 145px;
   }
   .footer-menu {
+    grid-template-rows: auto;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
   }
@@ -311,6 +294,11 @@ a {
 .description {
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
 }
 
 .banner-form {
@@ -517,7 +505,7 @@ a {
   color: #cacaca;
 }
 
-.app-btn {
+.app- .app-btn {
   padding: 16px 40px;
   border-radius: 32px;
   font-size: 12.8px;
