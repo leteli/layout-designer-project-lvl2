@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="m-0">
-  <section id="page-description" class="p-rel section-center-container description artist-bg">
+  <section class="section artist-bg">
+    <div id="page-description" class="p-rel description content">
     <header class="p-abs d-flex w-100 header">
       <div class="d-flex align-center">
         <img class="logo" src="./images/logo.svg" alt="Music Box Logo">
@@ -25,10 +26,10 @@
         <label for="search"></label>        
       </form>
     </header>
-    <div class="content w-100">
-    <h1 class="h1 mb-0">Morten Harket</h1>
-    <p class="text-white">24 875 поклонников</p>
-    <div class="artist-btn-group">
+    <div class="w-100">
+      <h1 class="h1 mb-0">Morten Harket</h1>
+      <p class="text-white">24 875 поклонников</p>
+      <div class="artist-btn-group">
         <button class="btn btn-purple">
           <img src="./images/play-button.svg" alt="Кнопка play">
           Микс
@@ -39,8 +40,10 @@
         </button>
       </div>
     </div>
+  </div>
   </section>
-  <section id="page-popular-track" class="section-container content p-top-section">
+  <section class="section">
+    <div cid="page-popular-track" class="content content-top">
       <h2 class="h2">Популярные треки</h2>
       <div class="tracks-container w-100 pr-50">
         <div class="popular-track">
@@ -92,8 +95,10 @@
           <div class="track-time">3:52</div>
         </div>
       </div>
+    </div>
   </section>
-  <section id="page-discography" class="section-container content p-top-section">
+  <section class="section">
+    <div id="page-discography" class="content content-top">
       <h2 class="h2 m-0">Дискография</h2>
       <div class="discography-container pr-50">
         <div class="discography-item">
@@ -139,8 +144,10 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
-  <section id="page-similar" class="section-container content p-top-section mb-100">
+  <section class="section">
+    <div id="page-similar" class="content content-top mb-100">
       <h2 class="h2 m-0">Похожие исполнители</h2>
       <div class="artists-container pr-50">
         <div class="similar-item">
@@ -200,8 +207,9 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
-  <footer class="p-rel section-container bg-gradient">
+  <footer class="p-rel section bg-gradient">
     <div class="content w-100">
       <nav class="footer-menu">
         <ul>
