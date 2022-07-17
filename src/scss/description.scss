@@ -47,7 +47,6 @@
 }
 
 .banner-form {
-  max-width: 570px;
   display: flex;
   flex-direction: column;
 
@@ -61,7 +60,7 @@
     min-height: 50px;
     padding-left: 20px;
     margin-bottom: 1.5rem;
-    border: solid 2px $text-main;
+    border: 2px solid $text-main;
     border-radius: 3px;
   }
 
@@ -135,6 +134,8 @@
     }
   }
   .banner-form {
+    max-width: 570px;
+    
     .input-group {
       gap: 25px;
     }
