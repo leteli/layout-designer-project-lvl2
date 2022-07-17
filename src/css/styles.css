@@ -31,8 +31,9 @@ a {
 }
 
 .content {
-  margin-left: 20px;
-  margin-right: 20px;
+  box-sizing: content-box;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 100%;
 }
 
@@ -395,15 +396,12 @@ a {
 }
 .pricing-container {
   flex-direction: column;
-  justify-content: space-evenly;
   gap: 50px;
 }
 
 .pricing-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
   margin-bottom: 40px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -414,6 +412,10 @@ a {
   margin-bottom: 200px;
   font-weight: normal;
   font-size: 16px;
+}
+.pricing-item .price-flex {
+  display: flex;
+  justify-content: center;
 }
 .pricing-item .pricing-value {
   margin-bottom: 40px;
@@ -505,7 +507,7 @@ a {
   color: #cacaca;
 }
 
-.app- .app-btn {
+.app-btn {
   padding: 16px 40px;
   border-radius: 32px;
   font-size: 12.8px;
