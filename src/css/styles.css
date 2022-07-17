@@ -308,7 +308,6 @@ a {
 }
 
 .banner-form {
-  max-width: 570px;
   display: flex;
   flex-direction: column;
 }
@@ -388,6 +387,9 @@ a {
   }
   .header-search input {
     max-width: 250px;
+  }
+  .banner-form {
+    max-width: 570px;
   }
   .banner-form .input-group {
     gap: 25px;
