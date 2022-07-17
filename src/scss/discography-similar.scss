@@ -1,7 +1,7 @@
 .discography-item,
 .similar-item {
   h3 {
-    margin: 0;
+    margin-bottom: 0;
     font-size: 18px;
     color: $text-headers;
     text-transform: capitalize;
@@ -19,10 +19,6 @@
 
 .similar-item {
   text-align: center;
-  
-  img {
-    border-radius: 50%;
-  }
 }
 
 @media (min-width: 1240px) {
