@@ -320,7 +320,7 @@ a {
   min-height: 50px;
   padding-left: 20px;
   margin-bottom: 1.5rem;
-  border: solid 2px #cacaca;
+  border: 2px solid #cacaca;
   border-radius: 3px;
 }
 .banner-form ::placeholder {
@@ -472,7 +472,9 @@ a {
 }
 
 .news-item .h3 {
+  font-size: 16px;
   font-weight: normal;
+  text-transform: capitalize;
 }
 .news-item .news-img {
   max-width: 100%;
@@ -581,6 +583,7 @@ hr {
 
 .track-info h3 {
   margin: 0;
+  font-size: 12.8px;
   text-transform: uppercase;
 }
 .track-info p {
@@ -596,11 +599,12 @@ hr {
   margin: 0;
   font-size: 18px;
   color: #fff;
+  text-transform: capitalize;
 }
 .discography-item img,
 .similar-item img {
-  width: 138px;
-  height: 138px;
+  width: 137px;
+  height: 137px;
 }
 .discography-item p,
 .similar-item p {
