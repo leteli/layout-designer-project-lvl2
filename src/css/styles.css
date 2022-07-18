@@ -14,7 +14,7 @@
 
 html, body {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   color: #cacaca;
   background-color: #08020d;
@@ -319,6 +319,11 @@ a {
   padding: 200px 20px;
 }
 
+.w-main {
+  width: 100%;
+  max-width: 1200px;
+}
+
 .form-container {
   display: flex;
   justify-content: center;
@@ -411,7 +416,7 @@ a {
     max-width: 570px;
   }
   .banner-form .input-group {
-    gap: 25px;
+    gap: 1.5rem;
   }
   .main-h1 {
     margin: 0;
@@ -530,6 +535,7 @@ a {
 }
 
 footer ul {
+  margin: 0;
   padding: 0;
 }
 footer li, footer a {
@@ -591,6 +597,10 @@ hr {
 .popular-track img {
   width: 55px;
   height: 55px;
+}
+
+.pr-50 {
+  padding-right: 50px;
 }
 
 .track-info h3 {

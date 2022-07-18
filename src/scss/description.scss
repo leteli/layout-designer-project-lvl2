@@ -53,6 +53,11 @@
   padding: 200px 20px;
 }
 
+.w-main {
+  width: 100%;
+  max-width: 1200px;
+}
+
 .form-container {
   display: flex;
   justify-content: center;
@@ -154,7 +159,7 @@
     max-width: 570px;
     
     .input-group {
-      gap: 25px;
+      gap: 1.5rem;
     }
   }
 
