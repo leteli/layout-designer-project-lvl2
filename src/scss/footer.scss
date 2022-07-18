@@ -5,17 +5,17 @@
 
 footer {
   ul {
-    margin: 0;
     padding: 0;
   }
   li, a {
+    font-size: 16px;
     color: $text-light;
     list-style: none;
   }
 }
 
 .footer-menu {
-  @include padding-y(3em);
+  @include padding-y(3rem);
 
   .footer-title {
     margin-top: 0;
@@ -37,14 +37,12 @@ hr {
 }
 
 .bottom-menu {
-  @include padding-y(2em);
-}
-
-.bottom-menu-list {
   display: flex;
   flex-direction: column;
   justify-content: start;
   gap: 1rem;
+
+  @include padding-y(2rem);
 }
 
 @media (min-width: 1240px) {
@@ -53,7 +51,7 @@ hr {
     border-top: 2px solid $text-light;
   }
 
-  .bottom-menu-list {
+  .bottom-menu {
     flex-direction: row;
   }
 }
