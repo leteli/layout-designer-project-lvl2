@@ -22,10 +22,12 @@
   .price-flex {
     display: flex;
     justify-content: center;
+    
+    margin-top: 0;
+    margin-bottom: 40px;
   }
 
   .pricing-value {
-    margin-bottom: 40px;
     font-size: 64px;
     line-height: 1em;
   }
@@ -43,7 +45,7 @@
 
   .pricing-footer {
     margin: 4rem auto;
-    font-size: 13px;
+    font-size: 12.8px;
     text-transform: none;
   }
 }

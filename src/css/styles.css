@@ -292,8 +292,9 @@ a {
 }
 
 .header-nav {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
+  width: min-content;
 }
 
 .header-search {
@@ -358,13 +359,14 @@ a {
 }
 
 .main-h1 {
+  margin-top: 78px;
   margin-bottom: 0;
 }
 
 .artist-btn-group {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 3rem;
   gap: 1.5rem;
 }
 .artist-btn-group .btn {
@@ -444,9 +446,10 @@ a {
 .pricing-item .price-flex {
   display: flex;
   justify-content: center;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 .pricing-item .pricing-value {
-  margin-bottom: 40px;
   font-size: 64px;
   line-height: 1em;
 }
@@ -461,7 +464,7 @@ a {
 }
 .pricing-item .pricing-footer {
   margin: 4rem auto;
-  font-size: 13px;
+  font-size: 12.8px;
   text-transform: none;
 }
 
@@ -515,8 +518,8 @@ a {
     font-size: 30px;
   }
   .news-item .news-img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 286px;
   }
 }
 .news-footer .btn {
@@ -549,7 +552,6 @@ footer li, footer a {
   padding-bottom: 3rem;
 }
 .footer-menu .footer-title {
-  margin-top: 0;
   font-size: 18px;
   text-transform: uppercase;
   color: #fff;
@@ -573,6 +575,8 @@ hr {
   gap: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 1240px) {

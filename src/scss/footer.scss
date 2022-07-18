@@ -19,7 +19,6 @@ footer {
   @include padding-y(3rem);
 
   .footer-title {
-    margin-top: 0;
     font-size: 18px;
     text-transform: uppercase;
     color: $text-headers;
@@ -44,6 +43,8 @@ hr {
   gap: 1rem;
 
   @include padding-y(2rem);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 1240px) {
