@@ -1,13 +1,16 @@
 .discography-item,
 .similar-item {
+  display: flex;
+  flex-direction: column;
   h3 {
-    margin-bottom: 0;
+    margin: 0;
     font-size: 18px;
     color: $text-headers;
     text-transform: capitalize;
   }
 
   img {
+    margin-bottom: 0;
     width: 137px;
     height: 137px;
   }
@@ -15,6 +18,11 @@
   p {
     margin: 0;
   }
+}
+
+.discography-info,
+.similar-info {
+  margin-top: 1rem;
 }
 
 .similar-item {

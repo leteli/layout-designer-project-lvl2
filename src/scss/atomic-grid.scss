@@ -10,6 +10,11 @@
   display: flex;
 }
 
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .align-center {
   align-items: center;
 }
@@ -88,13 +93,13 @@
 .discography-container {
   @extend %grid-gap-25-50;
   grid-template-columns: repeat(2, min-content);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, min-content);
 }
 
 .artists-container {
   @extend %grid-gap-25-50;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(4, min-content);
 }
 
 @media (min-width: 1240px) {
@@ -131,8 +136,8 @@
 
   .discography-container,
   .artists-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, min-content);
+    grid-template-rows: repeat(2, min-content);
   }
 }
 
