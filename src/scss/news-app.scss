@@ -3,11 +3,6 @@
   flex-direction: column;
 }
 
-.news-container {
-  @extend %flex-col;
-  gap: 65px;
-}
-
 .news-item {
   .h3 {  
     font-size: 16px;
@@ -23,7 +18,9 @@
     align-items: center;
     gap: 1rem;
 
-    font-size: 12px;
+    margin-top: 1.5rem;
+
+    font-size: 12.8px;
     text-transform: uppercase;
 
     .author {

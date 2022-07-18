@@ -2,8 +2,9 @@
 .similar-item {
   display: flex;
   flex-direction: column;
+
   h3 {
-    margin: 0;
+    margin-bottom: 0;
     font-size: 18px;
     color: $text-headers;
     text-transform: capitalize;
@@ -18,11 +19,6 @@
   p {
     margin: 0;
   }
-}
-
-.discography-info,
-.similar-info {
-  margin-top: 1rem;
 }
 
 .similar-item {
