@@ -573,9 +573,11 @@ hr {
 
 .footer-icons {
   display: flex;
-  align-items: center;
   gap: 1.5em;
   margin-bottom: 1rem;
+}
+.footer-icons img {
+  vertical-align: middle;
 }
 
 .bottom-menu {
@@ -585,8 +587,7 @@ hr {
   gap: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 1rem 1rem 0;
 }
 
 @media (min-width: 1240px) {
@@ -605,6 +606,7 @@ hr {
   }
   .bottom-menu {
     flex-direction: row;
+    margin-right: 0;
   }
 }
 .bg-gradient {
