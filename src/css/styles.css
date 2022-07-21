@@ -559,6 +559,10 @@ footer li, footer a {
   color: #fff;
 }
 
+.footer-menu ul:nth-child(1) h2 {
+  margin-top: 0.83em;
+}
+
 hr {
   left: 0;
   width: 100vw;
