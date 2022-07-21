@@ -359,7 +359,7 @@ a {
 }
 
 .main-h1 {
-  margin-top: 78px;
+  margin-top: 50px;
   margin-bottom: 0;
 }
 
@@ -427,12 +427,12 @@ a {
 .pricing-container {
   flex-direction: column;
   gap: 50px;
+  margin-bottom: 40px;
 }
 
 .pricing-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border-radius: 1em;
@@ -551,7 +551,9 @@ footer li, footer a {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-.footer-menu .footer-title {
+
+.footer-title {
+  margin-top: 0;
   font-size: 18px;
   text-transform: uppercase;
   color: #fff;
@@ -560,7 +562,9 @@ footer li, footer a {
 hr {
   left: 0;
   width: 100vw;
-  border-top: 1px solid #cacaca;
+  height: 1px;
+  background-color: #cacaca;
+  border: none;
 }
 
 .footer-icons {
@@ -580,9 +584,15 @@ hr {
 }
 
 @media (min-width: 1240px) {
+  .footer-menu ul {
+    margin-bottom: 1em;
+  }
+  .footer-title {
+    margin-top: 0.83em;
+  }
   hr {
     left: 0;
-    border-top: 2px solid #E0E0E0;
+    height: 2px;
   }
   .bottom-menu {
     flex-direction: row;
