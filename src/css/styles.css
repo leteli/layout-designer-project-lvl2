@@ -573,7 +573,9 @@ hr {
 
 .footer-icons {
   display: flex;
+  align-items: center;
   gap: 1.5em;
+  margin-bottom: 1rem;
 }
 
 .bottom-menu {
@@ -593,6 +595,9 @@ hr {
   }
   .footer-title {
     margin-top: 0.83em;
+  }
+  .footer-icons {
+    margin-bottom: 0;
   }
   hr {
     left: 0;
