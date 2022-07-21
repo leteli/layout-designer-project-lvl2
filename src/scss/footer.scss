@@ -11,8 +11,8 @@ footer {
 }
 
 .footer-menu {
-  padding-top: 3.75rem;
-  padding-bottom: 4.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .footer-title {
@@ -20,6 +20,10 @@ footer {
   font-size: 18px;
   text-transform: uppercase;
   color: $text-headers;
+}
+
+.footer-menu ul:nth-child(1) h2 {
+  margin-top: 0.83em;
 }
 
 
@@ -35,9 +39,7 @@ hr {
   display: flex;
   gap: 1.5em;
 
-  img {
-    vertical-align: middle;
-  }
+  margin-bottom: 1rem;
 }
 
 .bottom-menu {
@@ -51,6 +53,17 @@ hr {
 }
 
 @media (min-width: 1240px) {
+  .footer-menu ul { 
+    margin-bottom: 1em;
+  }
+  .footer-title {
+    margin-top: 0.83em;
+  }
+
+  .footer-icons {
+    margin-bottom: 0;
+  }
+
   hr {
     left: 0;
     height: 2px;
