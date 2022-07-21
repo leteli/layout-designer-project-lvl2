@@ -582,10 +582,9 @@ hr {
   flex-direction: column;
   justify-content: start;
   gap: 1rem;
-  padding-top: 2.5rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
   padding-right: 1rem;
-  margin-top: 1em;
 }
 
 @media (min-width: 1240px) {
