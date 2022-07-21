@@ -17,18 +17,21 @@ footer {
 
 .footer-menu {
   @include padding-y(3rem);
+}
 
-  .footer-title {
-    font-size: 18px;
-    text-transform: uppercase;
-    color: $text-headers;
-  }
+.footer-title {
+  margin-top: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $text-headers;
 }
 
 hr {
   left: 0;
   width: 100vw;
-  border-top: 1px solid $text-main;
+  height: 1px;
+  background-color: $text-main;
+  border: none;
 }
 
 .footer-icons {
@@ -48,9 +51,17 @@ hr {
 }
 
 @media (min-width: 1240px) {
+  .footer-menu ul { 
+    margin-bottom: 1em;
+  }
+
+  .footer-title {
+    margin-top: 0.83em;
+  }
+
   hr {
     left: 0;
-    border-top: 2px solid $text-light;
+    height: 2px;
   }
 
   .bottom-menu {
