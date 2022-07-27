@@ -87,7 +87,7 @@
   grid-area: footer;
 }
 
-.footer-menu {
+.footer-top-menu {
   display: grid;
   grid-template-rows: repeat(4, max-content);
   row-gap: 30px;
@@ -138,7 +138,7 @@
     column-gap: 145px;
   }
 
-  .footer-menu {
+  .footer-top-menu {
     grid-template-rows: auto;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
