@@ -1,7 +1,7 @@
 .p-abs {
   position: absolute;
 }
-  
+
 .p-rel {
   position: relative;
 }
@@ -123,10 +123,11 @@
 
   .news-item {
     grid-template-columns: repeat(2, 1fr);
-    
+
     &.photo-left {
       grid-template-areas: "image body" "image footer";
     }
+
     &.photo-right {
       grid-template-areas: "body image" "footer image";
     }
@@ -165,7 +166,7 @@
 }
 
 .transparent {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0 0 0 / 0%);
 }
 
 .btn-green {

@@ -1,19 +1,20 @@
 @font-face {
   font-weight: 400;
-  font-family: "Roboto";
+  font-family: Roboto;
   src: url("../fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-weight: 700;
-  font-family: "Roboto";
+  font-family: Roboto;
   src: url("../fonts/Roboto-Bold.ttf");
 }
 * {
   box-sizing: border-box;
 }
 
-html, body {
-  font-family: "Roboto", sans-serif;
+html,
+body {
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #cacaca;
@@ -97,7 +98,7 @@ a {
 .tracks-container p,
 .discography-container p,
 .artists-container p {
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 .p-abs {
@@ -264,16 +265,15 @@ a {
 }
 
 .btn-brown {
-  background-color: #95390C;
+  background-color: #95390c;
 }
 
 .btn-purple {
-  background-color: #5328A1;
+  background-color: #5328a1;
 }
 
 .header {
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: column wrap;
   gap: 1rem;
   top: 25px;
   right: auto;
@@ -507,7 +507,7 @@ a {
   text-transform: uppercase;
 }
 .news-item .news-author .author {
-  color: #F89202;
+  color: #f89202;
 }
 
 @media (min-width: 1240px) {
@@ -546,9 +546,11 @@ a {
 .footer li {
   list-style: none;
 }
-.footer li, .footer a, .footer p {
+.footer li,
+.footer a,
+.footer p {
   font-size: 16px;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 .footer-top-wrapper {

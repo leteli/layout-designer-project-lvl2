@@ -22,7 +22,7 @@
   .price-flex {
     display: flex;
     justify-content: center;
-    
+
     margin-top: 0;
     margin-bottom: 40px;
   }
@@ -31,14 +31,14 @@
     font-size: 64px;
     line-height: 1em;
   }
-  
+
   .btn {
     width: 100%;
     border: 1px solid $text-headers;
   }
 
   .currency {
-    margin-left: 1rem; 
+    margin-left: 1rem;
     font-size: 32px;
     line-height: 1.5;
   }
@@ -50,11 +50,11 @@
   }
 }
 
-
 @media (min-width: 1240px) {
   .pricing-container {
     flex-direction: row;
   }
+
   .pricing-item .h3 {
     font-size: 1.5rem;
   }
@@ -70,9 +70,9 @@
 }
 
 .bg-standard {
-    background-image: url("../images/subscribe_2.png");
+  background-image: url("../images/subscribe_2.png");
 }
 
 .bg-premium {
-    background-image: url("../images/subscribe_3.png");
+  background-image: url("../images/subscribe_3.png");
 }
