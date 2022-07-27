@@ -553,15 +553,26 @@ a {
 
 .footer-top-wrapper {
   width: 100%;
-  border-bottom: 1px solid #cacaca;
+  border-bottom: 2px solid #cacaca;
 }
 .footer-top-wrapper .content {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
+.footer-bottom-wrapper {
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+.footer-bottom-wrapper .content {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
 .footer-top-menu {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .footer-top-menu div:nth-child(1) h2 {
   margin-top: 0.83em;
@@ -583,8 +594,6 @@ a {
   flex-direction: column;
   justify-content: start;
   gap: 1rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 @media (min-width: 1240px) {
