@@ -21,6 +21,10 @@ footer {
 .footer-top-menu {
   padding-top: 3rem;
   padding-bottom: 3rem;
+
+  div:nth-child(1) h2 {
+    margin-top: 0.83em;
+  }
 }
 
 .footer-title {
@@ -28,19 +32,6 @@ footer {
   font-size: 18px;
   text-transform: uppercase;
   color: $text-headers;
-}
-
-.footer-top-menu ul:nth-child(1) h2 {
-  margin-top: 0.83em;
-}
-
-
-hr {
-  left: 0;
-  width: 100vw;
-  height: 1px;
-  background-color: $text-main;
-  border: none;
 }
 
 .footer-icons {

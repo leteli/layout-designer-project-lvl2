@@ -561,24 +561,15 @@ footer li, footer a {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+.footer-top-menu div:nth-child(1) h2 {
+  margin-top: 0.83em;
+}
 
 .footer-title {
   margin-top: 0;
   font-size: 18px;
   text-transform: uppercase;
   color: #fff;
-}
-
-.footer-top-menu ul:nth-child(1) h2 {
-  margin-top: 0.83em;
-}
-
-hr {
-  left: 0;
-  width: 100vw;
-  height: 1px;
-  background-color: #cacaca;
-  border: none;
 }
 
 .footer-icons {
@@ -594,7 +585,6 @@ hr {
   gap: 1rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-right: 1rem;
 }
 
 @media (min-width: 1240px) {
