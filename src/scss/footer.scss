@@ -1,4 +1,4 @@
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,21 +6,27 @@ footer {
     margin: 0;
     padding: 0;
   }
-  li, a {
+  li {
+    list-style: none;
+  }
+  li, a, p {
     font-size: 16px;
     color: $text-light;
-    list-style: none;
   }
 }
 
 .footer-top-wrapper {
   width: 100%;
   border-bottom: 1px solid $text-main;
+
+  .content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 .footer-top-menu {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  margin-bottom: 1rem;
 
   div:nth-child(1) h2 {
     margin-top: 0.83em;
@@ -34,11 +40,8 @@ footer {
   color: $text-headers;
 }
 
-.footer-icons {
-  display: flex;
-  gap: 1.5em;
-
-  margin-bottom: 1rem;
+.icon {
+  margin-right: 1.4rem;
 }
 
 .footer-bottom-menu {
@@ -51,9 +54,6 @@ footer {
 }
 
 @media (min-width: 1240px) {
-  .footer-top-menu ul { 
-    margin-bottom: 1em;
-  }
   .footer-title {
     margin-top: 0.83em;
   }

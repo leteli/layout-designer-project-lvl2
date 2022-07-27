@@ -41,6 +41,7 @@ a {
   box-sizing: content-box;
   @include padding-horizontal;
   width: 100%;
+  max-width: 1200px;
 }
 
 .content-left {
@@ -76,11 +77,6 @@ a {
 }
 
 @media (min-width: 1240px) {
-  .footer,
-  .content {
-    max-width: 1200px;
-  }
-
   .h1 {
     @include headers(60px, 90px);
   }
